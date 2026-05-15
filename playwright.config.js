@@ -38,7 +38,7 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'], headless: false,  video: 'on', slowMo: 5000},
+      use: { ...devices['Desktop Chrome'], headless: true,  video: 'on', slowMo: 5000},
       
     },
 
