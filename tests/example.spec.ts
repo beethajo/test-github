@@ -9,7 +9,7 @@ test.beforeEach(async ({ page }) => {
 
 
 
-test.only('verify valid login', async ({ page }) => {
+test('verify valid login', async ({ page }) => {
   await page.locator(locators.usernameInput).fill("standard_user")
   await page.locator(locators.passwordInput).fill("secret_sauce")
   await page.locator(locators.loginButton).click()
